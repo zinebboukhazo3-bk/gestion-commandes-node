@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mon panier - Gestion des commandes</title>
+
+    <!-- Charger le fichier CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <div class="dashboard-container">
+
+        <!-- En-tête de la page -->
+        <header class="dashboard-header">
+
+            <h1>Mon panier</h1>
+
+            <button id="logoutButton">Déconnexion</button>
+
+        </header>
+
+        <!-- Contenu du panier -->
+        <main class="cart-content">
+
+            <h2>Mes produits sélectionnés</h2>
+
+            <p class="cart-subtitle">
+                Consultez et gérez les produits que vous souhaitez commander.
+            </p>
+
+            <!-- Liste des produits du panier -->
+            <div id="cartList">
+
+                <p>Chargement du panier...</p>
+
+            </div>
+
+            <!-- Résumé du panier -->
+            <div id="cartSummary" class="cart-summary">
+
+                <h3>Résumé de la commande</h3>
+
+                <p>
+                    Total :
+                    <strong id="cartTotal">0 DH</strong>
+                </p>
+
+                <button id="checkoutButton">
+                    Passer la commande
+                </button>
+
+            </div>
+
+            <!-- Zone des messages -->
+            <p id="cartMessage"></p>
+
+            <!-- Retour au catalogue -->
+            <div class="cart-actions">
+
+                <a href="products.html">Continuer mes achats</a>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- Charger le JavaScript -->
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>

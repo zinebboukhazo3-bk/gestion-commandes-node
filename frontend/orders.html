@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mes commandes</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- En-tête de la page -->
+    <header class="dashboard-header">
+        <h1>Mes commandes</h1>
+        <button id="logoutButton">Déconnexion</button>
+    </header>
+
+    <main class="orders-content">
+
+        <h2>Historique de mes commandes</h2>
+
+        <p>Retrouvez ici toutes vos commandes.</p>
+
+        <!-- Statistiques des commandes -->
+        <section class="orders-stats">
+
+            <div class="stat-card">
+                <h3 id="totalOrders">0</h3>
+                <p>Total commandes</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="pendingOrders">0</h3>
+                <p>En attente</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="shippedOrders">0</h3>
+                <p>Expédiées</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="totalAmount">0 DH</h3>
+                <p>Montant total</p>
+            </div>
+
+        </section>
+
+        <!-- Recherche par numéro de commande -->
+        <div class="orders-search">
+            <input type="text" id="orderSearch" placeholder="Rechercher par numéro de commande...">
+        </div>
+
+        <!-- Filtrage par statut -->
+        <div class="orders-filter">
+
+            <label for="statusFilter">Filtrer par statut :</label>
+
+            <select id="statusFilter">
+                <option value="tous">Toutes les commandes</option>
+                <option value="en attente">En attente</option>
+                <option value="confirmée">Confirmées</option>
+                <option value="expédiée">Expédiées</option>
+                <option value="livrée">Livrées</option>
+                <option value="annulée">Annulées</option>
+            </select>
+
+        </div>
+
+        <!-- Tri des commandes -->
+        <div class="orders-sort">
+
+            <label for="sortOrders">Trier par :</label>
+
+            <select id="sortOrders">
+                <option value="newest">Plus récentes</option>
+                <option value="oldest">Plus anciennes</option>
+                <option value="price-asc">Montant croissant</option>
+                <option value="price-desc">Montant décroissant</option>
+            </select>
+
+        </div>
+
+        <!-- Liste des commandes -->
+        <div id="ordersList">
+            Chargement des commandes...
+        </div>
+
+        <!-- Pagination -->
+        <div class="orders-pagination" id="ordersPagination">
+
+            <button id="previousPage" disabled>
+                Précédent
+            </button>
+
+            <span id="pageInfo">Page 1</span>
+
+            <button id="nextPage" disabled>
+                Suivant
+            </button>
+
+        </div>
+
+        <!-- Messages -->
+        <p id="ordersMessage"></p>
+
+        <!-- Retour aux produits -->
+        <a href="products.html">Retour aux produits</a>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/orders.js"></script>
+
+</body>
+
+</html>

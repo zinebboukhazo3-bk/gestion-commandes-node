@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inscription | Gestion des commandes</title>
+
+    <!-- Importation du fichier CSS commun -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Conteneur principal -->
+    <main class="login-container">
+
+        <!-- Section de présentation -->
+        <section class="login-info">
+
+            <h1>Rejoignez-nous</h1>
+
+            <p>
+                Créez votre compte pour accéder à notre plateforme
+                de gestion des commandes.
+            </p>
+
+        </section>
+
+        <!-- Formulaire d'inscription -->
+        <section class="login-form-container">
+
+            <h2>Inscription</h2>
+
+            <p class="subtitle">
+                Remplissez les informations suivantes.
+            </p>
+
+            <form id="registerForm">
+
+                <!-- Nom complet -->
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+
+                <!-- Adresse email -->
+                <div class="form-group">
+                    <label for="email">Adresse email</label>
+
+                    <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
+                </div>
+
+                <!-- Mot de passe -->
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+
+                    <input type="password" id="password" name="password" placeholder="Choisissez un mot de passe"
+                        required>
+                </div>
+
+                <!-- Confirmation du mot de passe -->
+                <div class="form-group">
+                    <label for="confirmPassword">Confirmer le mot de passe</label>
+
+                    <input type="password" id="confirmPassword" name="confirmPassword"
+                        placeholder="Confirmez votre mot de passe" required>
+                </div>
+
+                <!-- Bouton d'inscription -->
+                <button type="submit" id="registerButton">
+                    Créer mon compte
+                </button>
+
+                <!-- Zone des messages -->
+                <p id="message"></p>
+
+            </form>
+
+            <!-- Lien vers la connexion -->
+            <p class="register-link">
+                Vous avez déjà un compte ?
+                <a href="index.html">Se connecter</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Le JavaScript sera ajouté dans une prochaine étape -->
+    <script src="js/register.js"></script>
+
+</body>
+
+</html>

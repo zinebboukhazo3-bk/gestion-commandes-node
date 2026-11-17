@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Adapter la page aux différentes tailles d'écran -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tableau de bord | Gestion des commandes</title>
+
+    <!-- Importer le fichier CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- Conteneur principal du tableau de bord -->
+    <main class="dashboard-container">
+
+        <!-- En-tête -->
+        <header class="dashboard-header">
+
+            <h1>Gestion des commandes</h1>
+
+            <!-- Bouton de déconnexion -->
+            <button id="logoutButton">Déconnexion</button>
+
+        </header>
+
+        <!-- Contenu principal -->
+        <section class="dashboard-content">
+
+            <h2>Bienvenue !</h2>
+
+            <p id="welcomeMessage">
+                Chargement des informations...
+            </p>
+
+            <!-- Informations de l'utilisateur -->
+            <div class="user-info">
+
+                <p>
+                    <strong>Nom :</strong>
+                    <span id="userName"></span>
+                </p>
+
+                <p>
+                    <strong>Email :</strong>
+                    <span id="userEmail"></span>
+                </p>
+
+                <p>
+                    <strong>Rôle :</strong>
+                    <span id="userRole"></span>
+                </p>
+
+            </div>
+            <!-- Accéder au catalogue des produits -->
+            <div class="dashboard-actions">
+                <button id="viewProductsButton"><a href="products.html">Consulter les produits</a></button>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Importer le JavaScript du tableau de bord -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

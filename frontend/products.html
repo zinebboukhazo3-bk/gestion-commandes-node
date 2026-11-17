@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produits | Gestion des commandes</title>
+
+    <!-- Importation du fichier CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <main class="dashboard-container">
+
+        <!-- En-tête de la page -->
+        <header class="dashboard-header">
+
+            <h1>Gestion des commandes</h1>
+            <button id="viewCartButton"><a href="cart.html">Mon panier</a></button>
+            <button id="viewCartButton"><a href="orders.html">Mes commandes</a></button>
+
+            
+           
+            
+
+            <button id="logoutButton">Déconnexion</button>
+
+        </header>
+
+        <!-- Contenu du catalogue -->
+        <section class="products-content">
+
+            <div class="products-heading">
+
+                <div>
+                    <h2>Notre catalogue</h2>
+                    <p>Découvrez les produits disponibles.</p>
+                </div>
+
+            </div>
+
+            <!-- Barre de recherche et filtres -->
+            <div class="products-filters">
+
+                <!-- Recherche par nom -->
+                <input type="text" id="searchInput" placeholder="Rechercher un produit...">
+
+                <!-- Filtre par catégorie -->
+                <select id="categoryFilter">
+                    <option value="">Toutes les catégories</option>
+                </select>
+
+                <!-- Tri par prix -->
+                <select id="sortFilter">
+                    
+                    <option value="">Ordre par défaut</option>
+                    <option value="price_asc">Prix croissant</option>
+                    <option value="price_desc">Prix décroissant</option>
+                </select>
+
+            </div>
+
+            <!-- Zone d'affichage des produits -->
+            <div id="productsList" class="products-grid">
+
+                <p>Chargement des produits...</p>
+
+            </div>
+            <!-- Commandes de pagination -->
+            <div class="pagination">
+                <button id="previousPage" disabled>Précédent</button>
+            
+                <span id="pageInfo">Page 1</span>
+            
+                <button id="nextPage" disabled>Suivant</button>
+            </div>
+
+            <!-- Zone des messages -->
+            <p id="productsMessage"></p>
+
+        </section>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/products.js"></script>
+
+</body>
+
+</html>
